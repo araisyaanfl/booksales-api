@@ -6,80 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Book extends Model
 {
+
     protected $table = 'books';
-    // private $books = [
-    //     [
-    //         'title' => 'Pulang',
-    //         'description' => 'Petualangan seorang pemuda yang kembali ke desa kelahirannya.',
-    //         'price' => 40000,
-    //         'stock' => 15,
-    //         'cover_photo' => 'pulang.jpg',
-    //         'genre_id' => 1,
-    //         'author_id' => 1
-    //     ],
-    //     [
-    //         'title' => 'Sherlock Holmes: A Study in Scarlet',
-    //         'description' => 'Kasus pertama Sherlock Holmes dan Dr. Watson memecahkan misteri pembunuhan misterius.',
-    //         'price' => 55000,
-    //         'stock' => 10,
-    //         'cover_photo' => 'study_in_scarlet.jpg',
-    //         'genre_id' => 2,
-    //         'author_id' => 2
-    //     ],
-    //     [
-    //         'title' => 'Hyouka',
-    //         'description' => 'Kisah siswa SMA yang menyelidiki misteri kecil di klub sastra klasik.',
-    //         'price' => 48000,
-    //         'stock' => 12,
-    //         'cover_photo' => 'hyouka.jpg',
-    //         'genre_id' => 3,
-    //         'author_id' => 3
-    //     ],
-    //     [
-    //         'title' => 'Pulang',
-    //         'description' => 'Petualangan seorang pemuda yang kembali ke desa kelahirannya.',
-    //         'price' => 40000,
-    //         'stock' => 15,
-    //         'cover_photo' => 'pulang.jpg',
-    //         'genre_id' => 1,
-    //         'author_id' => 1
-    //     ],
-    //     [
-    //         'title' => 'Sherlock Holmes: A Study in Scarlet',
-    //         'description' => 'Kasus pertama Sherlock Holmes dan Dr. Watson memecahkan misteri pembunuhan misterius.',
-    //         'price' => 55000,
-    //         'stock' => 10,
-    //         'cover_photo' => 'study_in_scarlet.jpg',
-    //         'genre_id' => 2,
-    //         'author_id' => 2
-    //     ],
-    //     [
-    //         'title' => 'Hyouka',
-    //         'description' => 'Kisah siswa SMA yang menyelidiki misteri kecil di klub sastra klasik.',
-    //         'price' => 48000,
-    //         'stock' => 12,
-    //         'cover_photo' => 'hyouka.jpg',
-    //         'genre_id' => 3,
-    //         'author_id' => 3
-    //     ],
-    //     [
-    //         'title' => 'The Maze Runner',
-    //         'description' => 'Sekelompok remaja terjebak di labirin mematikan dan berjuang untuk keluar.',
-    //         'price' => 60000,
-    //         'stock' => 8,
-    //         'cover_photo' => 'the_maze_runner.jpg',
-    //         'genre_id' => 4,
-    //         'author_id' => 4
-    //     ],
-    //     [
-    //         'title' => 'Alice in Borderland',
-    //         'description' => 'Seorang pemuda terjebak di dunia paralel dan harus bertahan hidup melalui permainan mematikan.',
-    //         'price' => 65000,
-    //         'stock' => 7,
-    //         'cover_photo' => 'alice_in_borderland.jpg',
-    //         'genre_id' => 4,
-    //         'author_id' => 5
-    //     ],
+
+    protected $fillable = ['title', 'description', 'price', 'stock', 'cover_photo', 'genre_id', 'author_id'
+    ];
     //     [
     //         'title' => 'Divergent',
     //         'description' => 'Remaja perempuan menemukan dirinya tidak cocok dengan sistem faksi masyarakatnya.',
